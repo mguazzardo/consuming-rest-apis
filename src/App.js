@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `https://api.github.com/users/hacktivist123/repos`;
+    const apiUrl = `http://babackend:8080/api/topics`;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((repos) => {
